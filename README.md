@@ -3,7 +3,10 @@ Machine learning project for DATA1030, investigating a dataset of Suzuki couplin
 
 In this project, I first explore the dataframe to better understand how it is distributed and work out how best to preprocess and split it. 
 Splitting is done using the train_test_split and the KFold splitting.
-Preprocessing uses 
+Preprocessing uses SimpleImputer to handle missing values and OneHotEncoder to enumerate the categorical string features.
+Hyperparameters were optimised by using GridSearchCV for 6 different machine learning models: Lasso, Ridge, Elastic Net, Random Forest, Support Vector Machine and K Neighbors.
+The test scores of these optimised models were compared with a baseline using mean squared error as the metric.
+The local and global feature importances for the best model, Random Forest, were determined by MDI, Permutation Importance and SHAP methods.
 
 Python version 3.11.4
 
